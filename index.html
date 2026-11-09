@@ -3,17 +3,20 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- pyscript -->
     <link rel="stylesheet" href="https://pyscript.net/releases/2026.7.3/core.css" />
     <script type="module" src="https://pyscript.net/releases/2026.7.3/core.js"></script>
     <title>code</title>
 </head>
 <body>
-    <h2>period</h2>
+    <h2>Non-Metals in the Periodic Table</h2>
     <p>Enter a non-metal element (e.g. H, He, C, N, O)</p>
+    
     <form>
         <input type="text" id="element" placeholder="Element"><br>
         <input type="button" py-click="findElement" value="Search">
     </form>
+    <!-- display -->
     <div id="output"></div>
 
     <py-script src="main.py"></py-script>
