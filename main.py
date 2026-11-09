@@ -5,7 +5,7 @@ def findElement(e):
     document.getElementById("output").innerHTML = " "
     element = document.getElementById("element").value
 
-    nonmetal = {
+    nonmetal = { # dictionary
         'H' : ['H', 'Hydrogen', 1, 1.008],
         'He' : ['He', 'Helium', 2, 4.003],
         'C' : ['C', 'Carbon', 6, 12.011],
@@ -28,7 +28,7 @@ def findElement(e):
         'Og' : ['Og', 'Oganesson', 118, 294],
     }
 
-    e_check = element in nonmetal
+    e_check = element in nonmetal # check if element entered is in dictionary
     
     display_message = (f"The element you entered is not on the list", f'{nonmetal[element]}')
     display(display_message[e_check], target="output")
